@@ -116,8 +116,12 @@ ul {
   padding: 0;
 }
 
-.imgRecette {
+.vignetteRecette {
   width: 150px;
-
   height: 150px;
+}
+
+.imgRecette {
+  width: 300px;
+  height: 300px;
 }

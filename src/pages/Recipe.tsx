@@ -8,8 +8,18 @@ function Recipe() {
 
     if (recipe) {
         return (
-            <h1>{recipe.name}</h1>
-        )
+            <>
+                <h1>{recipe.name}</h1>
+                <img className="imgRecette" src={recipe.image} alt={recipe.name}></img>
+                <h2>Ingrédients :</h2>
+                {recipe.ingredients.map((ingredient) =>
+                    <p>{ingredient}</p>
+                )}
+                <h2>Instructions :</h2>
+                {recipe.instructions.map((instruction) =>
+                    <p>{instruction}</p>
+                )}
+            </>)
     }
 
 }
