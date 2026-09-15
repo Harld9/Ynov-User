@@ -9,11 +9,10 @@ function UserList() {
             {
 
                 userlist.users.map((user) =>
-                    <div>
+                    <div className="carteUtilisateur">
                         <p>
                             Pseudo: {user.username}<br></br>
                             <Link to={`/user/${user.id}`}> Voir l'utilisateur</Link>
-                            <br></br><br></br>
                         </p>
                     </div >
                 )

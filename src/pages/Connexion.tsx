@@ -20,8 +20,10 @@ function Connexion() {
 
     return (
         <><h1>Connexion</h1><form>
-            <input value={username} onChange={(event) => setUsername(event.target.value)} />
-            <input value={password} onChange={(event) => setPassword(event.target.value)} />
+            <label htmlFor="username">Pseudo</label>
+            <input id="username" placeholder="Entrez votre pseudo" value={username} onChange={(event) => setUsername(event.target.value)} />
+            <label htmlFor="password">Mot de passe</label>
+            <input id="password" type="password" placeholder="Entrez votre mot de passe" value={password} onChange={(event) => setPassword(event.target.value)} />
             <button onClick={() => verifConnexion()} type="button">Se connecter</button>
             <p>{message}</p>
         </form></>
