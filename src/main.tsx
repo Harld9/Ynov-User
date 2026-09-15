@@ -10,6 +10,7 @@ import User from './pages/User.tsx'
 import Recipe from './pages/Recipe.tsx'
 import Connexion from './pages/Connexion.tsx'
 import { useState } from "react"
+import Profil from './pages/Profil.tsx'
 
 
 const Layout = () => {
@@ -46,6 +47,9 @@ const router = createBrowserRouter([
     {
       path: '/connexion',
       element: <Connexion />,
+    }, {
+      path: '/profil',
+      element: <Profil />,
     }
 
     ]
