@@ -8,6 +8,7 @@ import { Outlet } from 'react-router';
 import Header from './components/Header.tsx'
 import User from './pages/User.tsx'
 import Recipe from './pages/Recipe.tsx'
+import Connexion from './pages/Connexion.tsx'
 
 
 const Layout = () => (
@@ -39,8 +40,11 @@ const router = createBrowserRouter([
     {
       path: '/recipe/:id',
       element: <Recipe />,
+    },
+    {
+      path: '/connexion',
+      element: <Connexion />,
     }
-
 
     ]
   }
