@@ -115,3 +115,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.imgRecette {
+  width: 150px;
+
+  height: 150px;
+}
