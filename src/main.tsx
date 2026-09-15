@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import "./index.css";
 import App from './App.tsx';
-import UserList from './pages/UserList.tsx';
 import { Outlet } from 'react-router';
 import Header from './components/Header.tsx'
 import User from './pages/User.tsx'

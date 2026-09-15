@@ -8,8 +8,20 @@ function Recipe() {
 
     if (recipe) {
         return (
-            <h1>{recipe.name}</h1>
-        )
+            <>
+                <h1>{recipe.name}</h1>
+                <img className="imgRecette" src={recipe.image} alt="Grande image de la recette"></img>
+                <p>{recipe.ingredients}</p>
+
+
+
+
+
+
+
+
+
+            </>)
     }
 
 }
