@@ -5,7 +5,7 @@ function Profil() {
 
     if (location.state) {
         return (
-            <h1>Bonjour {location.state.firstName}</h1>
+            <h1>Bonjour {location.state.firstName} {location.state.lastName}</h1>
         )
     }
 
