@@ -5,7 +5,7 @@ import "./index.css";
 import App from './App.tsx';
 import UserList from './pages/UserList.tsx';
 import { Outlet } from 'react-router';
-import Header from './pages/Header.tsx'
+import Header from './components/Header.tsx'
 import User from './pages/User.tsx'
 
 const Layout = () => (

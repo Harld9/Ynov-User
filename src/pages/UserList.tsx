@@ -37,7 +37,7 @@ function UserList() {
 
                         <p>
                             name: {user.first_name}
-                            <Link to={`/user/${user.first_name}`}>Go to user</Link></p>
+                            <Link to={`/user/${user.first_name}`}> Voir l'utilisateur</Link></p>
 
                         <p>
                             last name: {user.last_name}
