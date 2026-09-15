@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function Header() {
+function Header(props: { userConnecteId: number }) {
 
 
     return (
@@ -9,7 +9,9 @@ function Header() {
             <ul className="menu">
                 <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/UserList">Utilisateurs</Link></li>
-                <li><Link to="/Connexion">Connexion</Link></li>
+                {props.userConnecteId === 0 && (
+                    <li><Link to="/connexion">Se connecter</Link></li>
+                )}
             </ul>
         </nav>
     )

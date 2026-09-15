@@ -9,17 +9,19 @@ import Header from './components/Header.tsx'
 import User from './pages/User.tsx'
 import Recipe from './pages/Recipe.tsx'
 import Connexion from './pages/Connexion.tsx'
+import { useState } from "react"
 
 
-const Layout = () => (
-  <>
-    <Header />
-    <Outlet />
-  </>
+const Layout = () => {
+  const [userConnecteId, setUserConnecteId] = useState(0)
 
-
-)
-
+  return (
+    <>
+      <Header userConnecteId={userConnecteId} />
+      <Outlet />
+    </>
+  )
+}
 
 
 const router = createBrowserRouter([
