@@ -12,7 +12,23 @@ function Connexion() {
         const user = userlist.users.find(user => user.username === username && user.password === password)
         if (user) {
             setMessage("Identifiants corrects")
-            navigate("/profil", { state: { firstName: user.firstName, lastName: user.lastName } })
+            navigate("/profil", {
+                state: {
+                    id: user.id,
+                    username: user.username,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    email: user.email,
+                    phone: user.phone,
+                    age: user.age,
+                    gender: user.gender,
+                    birthDate: user.birthDate,
+                    image: user.image,
+                    role: user.role,
+                    address: user.address,
+                    company: user.company
+                }
+            })
         }
         else { setMessage("Identifiants incorrects") }
     }
