@@ -14,7 +14,7 @@ import Profil from './pages/Profil.tsx'
 
 
 const Layout = () => {
-  const [userConnecteId, setUserConnecteId] = useState(0)
+  const [userConnecteId] = useState(0)
 
   return (
     <>
