@@ -15,7 +15,7 @@ import Erreur from './pages/Erreur.tsx'
 
 
 const Layout = () => {
-  const [userConnecteId, setUserConnecteId] = useState(0)
+  const [userConnecteId] = useState(0)
 
   return (
     <>
