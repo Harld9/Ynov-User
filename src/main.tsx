@@ -11,6 +11,7 @@ import Recipe from './pages/Recipe.tsx'
 import Connexion from './pages/Connexion.tsx'
 import { useState } from "react"
 import Profil from './pages/Profil.tsx'
+import Erreur from './pages/Erreur.tsx'
 
 
 const Layout = () => {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
     }, {
       path: '/profil',
       element: <Profil />,
+    },
+    {
+      path: "*",
+      element: <Erreur />,
     }
 
     ]
