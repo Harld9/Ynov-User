@@ -8,7 +8,7 @@ import { Outlet } from 'react-router';
 import Header from './components/Header.tsx'
 import User from './pages/User.tsx'
 import Recipe from './pages/Recipe.tsx'
-import Connexion from './pages/Connexion.tsx'
+import Login from './pages/Login.tsx'
 import { useState } from "react"
 import Profil from './pages/Profil.tsx'
 import Erreur from './pages/Erreur.tsx'
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
       element: <Recipe />,
     },
     {
-      path: '/connexion',
-      element: <Connexion />,
+      path: '/login',
+      element: <Login />,
     }, {
       path: '/profil',
       element: <Profil />,
@@ -55,8 +55,11 @@ const router = createBrowserRouter([
     {
       path: "*",
       element: <Erreur />,
-    }
-
+    },
+      //{
+      //  path: "/login",
+      //  element: <Login />
+      //}
     ]
   }
 ]);

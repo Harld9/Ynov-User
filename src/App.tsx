@@ -1,27 +1,39 @@
 import './styles/App.css'
-import { Link } from 'react-router-dom'
-import recipesList from "./data/recipes.json";
+import type { Recipe } from "./types/recipe";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+interface RecipesResponse {
+  recipes: Recipe[];
+}
 
 function App() {
-  return (
-    <>
-      <h1>Bienvenue sur le site de cuisine</h1>
-
-      {
-        recipesList.recipes.map((recipe) =>
-          <div className="carteRecette">
-            <p>
-              Recette : {recipe.name} <br></br>
-              Temps de préparation : {recipe.prepTimeMinutes} minutes<br></br>
-              <img className="vignetteRecette" src={recipe.image} alt="Vignette Recette"></img><br></br>
-              <Link to={`/recipe/${recipe.id}`}> Voir la recette</Link>
-            </p>
-          </div >
+  const url = "https://dummyjson.com/recipes"
+  const [recipes, setRecipes] = useState<Recipe[]>([])
 
 
-        )
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axios.get<RecipesResponse>(url);
+        setRecipes(response.data.recipes);
+
+      } catch (e) {
+        console.error(e);
       }
-    </>)
+    })();
+  }, [])
+  return (<>
+    {recipes.map((recipe) =>
+      <div>
+        <p>name : {recipe.name}</p>
+      </div>
+    )}
+  </>)
 }
 
 export default App
+
+
+
+

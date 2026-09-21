@@ -11,7 +11,7 @@ function Header(props: { userConnecteId: number }) {
                 <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/UserList">Utilisateurs</Link></li>
                 {props.userConnecteId === 0 && (
-                    <li><Link to="/connexion">Se connecter</Link></li>
+                    <li><Link to="/login">Se connecter</Link></li>
                 )}
             </ul>
         </nav>
