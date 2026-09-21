@@ -1,3 +1,4 @@
+import "./UserList.css"
 import { Link } from 'react-router-dom'
 import userlist from "../data/users.json";
 

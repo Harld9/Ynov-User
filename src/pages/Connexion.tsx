@@ -1,3 +1,4 @@
+import "./Login.css"
 import { useState } from "react"
 import userlist from "../data/users.json";
 import { useNavigate } from "react-router-dom"
@@ -35,7 +36,7 @@ function Connexion() {
 
 
     return (
-        <><h1>Connexion</h1><form>
+        <><h1>Connexion</h1><form className="formConnexion">
             <label htmlFor="username">Pseudo</label>
             <input id="username" placeholder="Entrez votre pseudo" value={username} onChange={(event) => setUsername(event.target.value)} />
             <label htmlFor="password">Mot de passe</label>

@@ -1,3 +1,4 @@
+import "./Recipe.css"
 import { useParams } from "react-router-dom"
 import recipesList from "../data/recipes.json";
 

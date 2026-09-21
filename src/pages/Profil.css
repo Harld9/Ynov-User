@@ -1,0 +1,38 @@
+.profil {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+.enteteProfil {
+  padding: 25px;
+  background-color: #e5ecdf;
+  border: 1px solid #c8d3c2;
+  border-radius: 6px;
+}
+
+.photoProfil {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.enteteProfil h1 {
+  margin: 15px 0 5px;
+}
+
+.blocProfil {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.blocProfil h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}

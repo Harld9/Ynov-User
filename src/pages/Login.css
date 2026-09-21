@@ -1,0 +1,34 @@
+.formConnexion {
+  max-width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.formConnexion input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.formConnexion button {
+  padding: 10px 20px;
+  background-color: #476343;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formConnexion button:hover {
+  background-color: #365b31;
+}

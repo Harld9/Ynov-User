@@ -1,0 +1,8 @@
+.carteUtilisateur {
+  max-width: 400px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
