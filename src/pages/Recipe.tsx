@@ -1,5 +1,5 @@
 import Erreur from "./Erreur"
-import "./Recipe.css"
+import "../styles/Recipe.css"
 import { useParams } from 'react-router-dom'
 import axios from "axios";
 import { useEffect, useState } from "react";

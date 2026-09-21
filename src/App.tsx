@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import { Link } from 'react-router-dom'
 import recipesList from "./data/recipes.json";
 

@@ -1,4 +1,4 @@
-import "./Login.css"
+import "../styles/Login.css"
 import { useState } from "react"
 import userlist from "../data/users.json";
 import { useNavigate } from "react-router-dom"
